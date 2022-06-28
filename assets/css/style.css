@@ -1,0 +1,250 @@
+/* Resetear */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos principales */
+
+html,
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #4d4d4d;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h4{
+    font-size: 1.5rem;
+}
+
+a{
+  text-decoration: none;  
+}
+
+/* Classes utiles */
+.container{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.large{
+    font-size: 1.25rem;
+}
+
+.txt-orange{
+    color: #e9a075;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 23px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border-radius: 4px;
+}
+
+.bnt-round{
+    border-radius: 20px;
+}
+
+.btn-dark{
+    background: #e9a075;
+    border: 1px solid #e9a075;
+    color: white;
+}
+
+.btn-dark:hover{
+    background: #d19069;
+    color: #fff;
+}
+
+form label{
+    display: inline-block;
+    margin-bottom: 6px;
+}   
+
+form .form-group{
+    margin-bottom: 16px;
+}
+
+form .form-control{
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/*Mainheader */
+#mainheader{
+    background: radial-gradient(at 10% 10px, #e9a075, white, white);
+    height: 100vh;
+}
+
+/* Navabar */
+#navbar{
+    color: #fff;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navbar a{
+    color: #4d4d4d;
+}
+
+#navbar .logo{
+    float: left;
+    padding-top: 16px;
+    font-size: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover{
+    color: #d19069;
+}
+
+/*Showcase */
+#showcase{
+    padding: 80px 0;
+}
+
+.showcase-row{
+    display: flex;
+    padding: 50px 0;
+}
+
+.showcase-row-title p.large{
+    padding-bottom: 15 px;
+}
+
+/*Portafolio */
+#portafolio{
+    padding: 50px 20px;
+    text-align: center;
+    color: black;
+
+}
+
+#portafolio p{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.portafolio-row{
+    display: flex;
+}
+
+.portafolio-row img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Sobre Mi */
+#sobre{
+    padding: 80px 0;
+    text-align: center;
+}
+
+#sobre h2{
+    padding-bottom: 50px;
+}
+
+#sobre p{
+    padding-bottom: 20px;
+}
+
+/* COntacto*/
+#contact{
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact h2{
+    text-align: center;
+}
+
+#contact p{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.contact-row{
+    display: flex;
+    padding: 20px;
+}
+
+.contact-row-img{
+    width: 50%;
+}
+
+.contact-row-img img{
+    padding: 120px;
+}
+
+.contact-row-form{
+    width: 50%;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 70px;
+}
+
+.contact-row-form h4{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contact-row-form button{
+    width: 100%;
+}
+
+/* Footer */
+#mainfooter{
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(at 10% 10px, #e9a075, white, white);
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
